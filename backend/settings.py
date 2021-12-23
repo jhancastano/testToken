@@ -62,7 +62,9 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
-CORS_ORIGIN_WHITELIST = []
+CORS_ORIGIN_WHITELIST = [
+    'test1.jhancastano.com'
+]
 
 CORS_ALLOW_METHODS = [
     'DELETE',
