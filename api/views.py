@@ -34,7 +34,7 @@ class userList(APIView):
             users = userSerializer(user,many=True)
             return Response(users.data,status=status.HTTP_200_OK)
         else:
-            return Response({'details':'no se encuentra usuario'},status=status.HTTP_404_BAD_REQUEST)
+            return Response({'details':'no se encuentra usuario'},status=status.HTTP_404_NOT_FOUND)
 
 @permission_classes((AllowAny,))   
 class getToken(APIView):
